@@ -10,6 +10,11 @@ Para usar el siguiente proyecto, una vez clonado instalar las dependencias:
 ```bash
 pip install -r requirements.txt
 ```
+Para subir los modelos al firebase convertirlos a .json con el siguiente comando en el terminal:
+
+```bash
+tensorflowjs_converter --input_format=keras /tmp/model.h5 /tmp/tfjs_model
+```
 
 ## Ejemplo de datos a recibir
 
