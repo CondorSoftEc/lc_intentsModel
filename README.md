@@ -81,3 +81,18 @@ allInfo | boolean (default = false)| Si es verdadero retornará la lista de las 
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+
+# Docker
+
+## Create container
+
+docker build --tag lctrainer -f ./docker/Dockerfile .
+
+## TAG
+
+docker tag  lctrainer astandre/lctrainer 
+
+## RUN
+
+docker run -p 127.0.0.1:8888:8888 -v data:/opt/graphdb/home --name lctrainer-instance -t lctrainer
